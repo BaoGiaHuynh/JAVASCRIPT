@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <script>
+            function User(Name, Age){
+                this.Name = Name;
+                this.Age = Age;
+                this.InThongTin = function(){
+                    document.write ("Name: " + this.Name + " | Age: " + this.Age);
+                }
+            }
+
+            var u = new User("Max", "20");
+            u.InThongTin();
+            u.Surname = "Lee";
+            u.Age = 30;
+            document.write("<br>");
+            document.write("Sau khi thêm thuộc tính Surname vào đối tượng u và thay đổi giá trị của thuộc tính Age: ");
+            document.write("<br>");
+            document.write ("Name: " + u.Name + " | Age: " + u.Age  + " | Surname: " + u.Surname);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+
+       <script>
+
+        //phuong thuc dinh nghia
+        function Student (name, id, gender){
+            this.name  = name;
+            this.id = id;
+            this.gender= gender;
+              this.InThongTin = function(){
+                  document.write("<h2> Student Information</h2>");
+                  document.write("Name: " + this.name + " | ID: " + this.id + " | Gender: " + this.gender)
+              }
+        }
+
+        //ham main
+
+        //khoi tao mot doi tuong struct thuc te
+        var st1 = new Student("Gia Bao", "6551071007", "Nam");
+        st1.InThongTin();
+
+
+       </script>
+
+
+    </body>
+</html>

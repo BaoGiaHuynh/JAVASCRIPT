@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Tính lãi suất đơn</title>
+</head>
+<body>
+  <script>
+    
+    var P = 1000000; 
+    var r = 5 / 100; 
+    var n = 3;       
+    var tongTien = P * (1 + r * n);
+    
+    tongTien = Math.round(tongTien * 100) / 100;
+
+    document.write(" Số tiền gốc: " + P.toLocaleString() + " VND<br>");
+    document.write(" Lãi suất hàng năm: " + (r * 100) + "%<br>");
+    document.write(" Số năm gửi: " + n + "<br><br>");
+    document.write(" Tổng số tiền sau " + n + " năm là: <b>" + tongTien.toLocaleString() + " VND</b>");
+  </script>
+</body>
+</html>

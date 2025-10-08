@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển nhị phân sang thập phân</title>
+</head>
+<body>
+    <script>
+        
+        var nhiPhan = prompt("Nhập số nhị phân bất kỳ:");
+
+        var thapPhan = 0;
+        var doDai = nhiPhan.length;
+
+        
+        for (var i = 0; i < doDai; i++) {
+            var bit = parseInt(nhiPhan[doDai - 1 - i]);
+            thapPhan += bit * Math.pow(2, i); // áp dụng đối tượng Math
+        }
+
+        
+        document.write("<h2>Kết quả chuyển đổi:</h2>");
+        document.write("Số nhị phân: " + nhiPhan + "<br>");
+        document.write("Số thập phân: " + thapPhan);
+    </script>
+</body>
+</html>

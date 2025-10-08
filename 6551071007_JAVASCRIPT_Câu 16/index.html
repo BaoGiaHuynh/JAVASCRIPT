@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+
+            
+          function HinhTru(radius, height){
+            this.radius = radius;
+            this.height = height;
+
+            this.theTich = function(){
+                var V = Math.PI * this.radius * this.radius * this.height;
+                document.write("The tich cua hinh tru la: " + V.toFixed(2));
+            }
+
+            this.dienTichToanPhan = function(){
+               var S = 2 * Math.PI * this.radius * (this.height + this.radius);
+               document.write("<br><br>");
+               document.write("Diện tích toàn phần của hình trụ sau khi cập nhật chiều cao 30 là: " + S.toFixed(2));
+           }
+          }
+          
+          var hinhTru = new HinhTru(10, 15);
+          hinhTru.theTich();
+          hinhTru.height = 30;
+          hinhTru.dienTichToanPhan();
+
+        </script>
+    </body>
+</html>

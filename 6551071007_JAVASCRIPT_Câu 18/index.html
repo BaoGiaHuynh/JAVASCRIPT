@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tính giai thừa</title>
+</head>
+<body>
+    <script>
+       
+        var n = prompt("Nhập số nguyên dương n:");
+        n = Math.floor(Math.abs(n)); 
+
+        var giaiThua = 1;
+
+        
+        for (var i = 1; i <= n; i++) {
+            giaiThua *= i;
+        }
+
+        document.write("<h2>Kết quả:</h2>");
+        document.write(n + "! = " + giaiThua);
+    </script>
+</body>
+</html>

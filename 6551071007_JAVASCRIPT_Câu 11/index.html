@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Đảo ngược số nguyên</title>
+</head>
+<body>
+  <script>
+    function daoNguocSo(n) {
+      var dao = 0;
+      while (n > 0) {
+        dao = dao * 10 + (n % 10);
+        n = Math.floor(n / 10);
+      }
+      return dao;
+    }
+
+    var so = 654321;
+    document.write("Số ban đầu: " + so + "<br>");
+    document.write("Số sau khi đảo ngược: " + daoNguocSo(so));
+  </script>
+</body>
+</html>
